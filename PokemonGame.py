@@ -1,9 +1,10 @@
+import os
 import time
 import random
 import pandas as pd
 
 #index_col="ATTACK" -> O Index da planilha vai ser a coluna ATTACK, possibilitando a comparacao por STRING e nao por um index INT
-type_chart = pd.read_excel("Pokemon-Game\EffetivenessDataBase.xlsx", index_col="ATTACK")
+type_chart = pd.read_excel(os.path.join(os.path.dirname(__file__), "../Pokemon-Game/EffetivenessDataBase.xlsx"), index_col="ATTACK")
 
 player = None
 computer = None
