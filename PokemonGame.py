@@ -195,7 +195,7 @@ def fight(player_pk, comp_pk, death=False):
 while menu != '0':
     print('- - - - - MENU- - - - -'
           '\n1 - Choose a Pokemon'
-          '\n0 - QUIT\n')
+          '\n0 - EXIT GAME\n')
     menu = input()
     if menu == '1':
         time.sleep(0.5)
@@ -230,7 +230,7 @@ while menu != '0':
         menu = None
 
         while option != '0':
-            print('- - - - - MENU- - - - -'
+            print('- - - - - BATTLE OPTIONS - - - - -'
                 '\n1 - Start Battle!'
                 '\n0 - QUIT\n')
             option = input()
